@@ -1,0 +1,192 @@
+/* Reset de margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  border: 5px solid black; /* Borda preta em torno de toda a página */
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 2px solid #3498db; /* Linha abaixo do título */
+}
+
+.profile-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  color: #000;
+  text-align: center; /* Centraliza o conteúdo dentro do contêiner */
+  position: relative; /* Necessário para posicionar a bandeira corretamente */
+}
+
+.profile-img {
+  width: 200px; /* Tamanho da foto de perfil */
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #3498db;
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.flag-img {
+  width: 40px; /* Tamanho da bandeira */
+  height: 40px;
+  border-radius: 50%;
+  bottom: 10px; /* Posiciona a bandeira na parte inferior */
+  right: 10px; /* Posiciona a bandeira à direita */
+  border: 2px solid #fff; /* Borda branca ao redor da bandeira */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+h1,
+.subtitle {
+  color: #000;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #3498db;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  gap: 20px;
+  padding-top: 5px;
+}
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+.social-links a img:hover {
+  transform: scale(1.2);
+}
+
+main {
+  background-color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #000;
+  font-size: 1.8em;
+  border-bottom: 1px solid #3498db;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  color: #000;
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+  background-color: #efefef;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #2980b9; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.05); /* Efeito de zoom */
+}
+
+footer {
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0; /* Remove margens padrão do parágrafo */
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Exibindo o cronograma */
+#cronograma {
+  display: block; /* Alterado de 'none' para 'block' para exibir */
+}
